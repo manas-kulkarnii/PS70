@@ -1,19 +1,123 @@
+h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+h2 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+
 body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: black;
-    padding-top: 0px !important;
-  }
-
-p {font-size: 16px;}
-.margin {margin-bottom: 15px;}
-
-.container-fluid {
-  padding: 0px;
-  /*padding-bottom: 70px;*/
+    padding-top: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
-.nav-title{
-  margin-left: 15px;
-  margin-right: 15px;
+.typeSetUp {
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+}
+
+.typed{
+    overflow: hidden;
+    animation: 
+        typing 1s steps(20, end) forwards,
+        blink-caret .75s step-end 4;
+  }
+
+.typed2{
+    overflow: hidden;
+    animation: 
+        typing 2s steps(40, end) forwards,
+        blink-caret .75s step-end 5;
+    animation-delay: 3s;
+}
+
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: black }
+    50% { border-color: transparent; }
+}
+
+.c1{
+    display: inline-block;
+}
+.c2{
+    display: inline-block;
+}
+
+.appear1 {
+    animation: fadeIn 9s;
+}
+
+.appear2 {
+    animation: fadeIn 9.25s;
+}
+
+.appear3 {
+    animation: fadeIn 9.50s;
+}
+
+.appear4 {
+    animation: fadeIn 9.75s;
+}
+
+.appear5 {
+    animation: fadeIn 10s;
+}
+
+.appear6 {
+    animation: fadeIn 10.25s;
+}
+
+.appear7 {
+    animation: fadeIn 10.5s;
+}
+
+.appear8 {
+    animation: fadeIn 10.75s;
+}
+
+.appear9 {
+    animation: fadeIn 11s;
+}
+
+.appear10 {
+    animation: fadeIn 11.25s;
+}
+
+.appear11 {
+    animation: fadeIn 11.5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    66% {opacity: 0; }
+    70% {opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.light {
+    color: black
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: auto;
+    height: 400px;
+    margin: auto;
+  }
+
+.half {
+    width: 50%;
+}
+
+.me {
+    width: 57%;
 }
