@@ -1,40 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Connor x PS70</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../styles.css">
 
-<title>PS70: Intro to Digital Fabrication </title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="../style.css" rel="stylesheet">
+  </head>
+  <body>
 
+    <a href="../index.html?first=False"><button>Back to Home</button></a>
 
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <div style="align-items: left; justify-content:left;" class="container-fluid">
-    <h3 class="nav-title"> PS70: Intro to Digital Fabrication</h3>
-    <div class="navbar-nav">
-      <h4></h4>
-      <h4><a class="nav-link" href="../index.html">Home</a></h4>
-      <h4><a class="nav-link" href="../about.html">About</a></h4>
+    <h1>Final Project Planning</h1>
+
+    <p>Although the push to actually create a finished product took place mostly in the last few weeks of the semester, making plans for the final project was a semester-long endevour. Here are some of my check-ins from week 1 until the end, so you can get a sense of the process I took in deciding on a project and how my ideas shifted over time!</p>
+
+    <div id="accordion" class="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Week 1: Initial Ideas
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="accordian collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <h1>Week 1: Project Ideas</h1>
+
+            <p>i don't have any super concrete ideas for my project yet, i'm hoping to refine these as the semester goes on, but here are a couple of ideas i have so far</p>
+        
+            <h3>Knee-Related Ideas</h3>
+        
+            
+        
+            <p>i tore my patellar tendon, acl, and meniscus last semester, so i've been thinking about something that could help me (and maybe others) in the recovery process. one idea i've had is a motion-tracking device that can help people see whether they're doing their pt exercises correctly. another potential idea along these lines would be something to help people who just had surgery with a simple everyday task (i couldn't put my own socks on for more than a month). </p>
+        
+            <img src="../images/week1/knee.JPG" class="img-fluid half mx-auto" alt="cast">
+        
+            <h3>Education-Related Ideas</h3>
+            <p>
+                i've been involved in computer science education for around five years now, and i'd be interested in the idea of making a device that kids could program to make learning cs more physical. it would be cool to allow kids to actually move physical blocks around to make a device move and get excited about programming without just looking at a computer screen.
+            </p>
+        
+            <img src="../images/week1/cs50.jpg" class="img-fluid half mx-auto" alt="cast">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Week 4: Background Research
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <h1>Week 4 Update: Background Research</h1>
+
+    <p>While I still could change my mind, right now I'm starting to research the idea of making a kit that will help kids learn to code by physically dragging code blocks around. Here's what I found in my research while looking forr similar things that already exist:</p>
+
+    <ul>
+      <li><a href="https://scratch.mit.edu/">Scratch</a>: This is what gave me the idea, and it is very useful as it allows kids to drag and drop colorful pieces that control varrious "sprites" on the screen. I think this would be even more compelling for kids if it was done in the physical space.</li>
+      <li><a href="https://www.letsstartcoding.com/ultimate-kit-2-product-detail">Lets Start Coding Kits</a>: These kits allow kids to practice programming, then send their programs to a circuit they've made, similarly to what we're doing with microcontrollers. While the results are physical, the coding itself actually takes place on a computer. These kits cost around $170, so it would be nice to make it cheaper.</li>
+      <li><a href="https://www.primotoys.com/">Cubetto</a>: This toy seems to be the most similar to what I want to accomplish, as kids put code pins into a physical board rather than typing it out. I would hope that my project though could include some concepts like loops and conditionals not on display here, and that I could put something together for less than the price here of $180</li>
+    </ul>
+
+    <p>In general, it might not be possible to do everything I hope to (conditionals, functions, loops, etc), but I hope to do something with at least some aspects of programming built out, with some input sensors (maybe a remote control?) and keep it at a much lower cost than the existing options offer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Week 5 Update: Beginning to Plan
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <h1 id="week5update">Week 5 Update</h1>
+
+            <h3>Bill of Materials</h3>
+            <ul>
+              <li>Wooden board on which code pieces would be placed.</li>
+              <li>Individual code pieces likely laser cut out of vinyl</li>
+              <li>Metal connectors for the pieces so we can somehow detect which pieces are where.</li>
+              <li>For output, I would love to make a small vehicle that would drive around as programmed. I know I would need some small motors for this, a power supply, and a material to build the vehicle, but I haven't done much playing around with this.</li>
+            </ul>
+        
+            <h3>Timeline</h3>
+            <ol>
+              <li>In the coming weeks, get a vehicle working that accepts commands and can turn, stop, go, and change speeds.</li>
+              <li>Afterward, get a basic connection between the code blocks and the car. This might look like just "stop" and "go" blocks that would control it remotely.</li>
+              <li>Start building out more complicated code blocks and implementing them. These could be conditionals, functions, loops, etc.</li>
+              <li>Consider other input/output sources. Should the vehicle change colors? Should it detect certain things like walls or spots on the ground?</li>
+            </ol>
+        
+        
+            <h3>Project Plan</h3>
+            <ul>
+              <li>3D print the chasis of the car. This will hopefully allow the parts to fit together smoothly so I won't have to worry about the wheels or other parts getting stuck.</li>
+              <li>I'll have to use some remote control technology we haven't learned yet to allow the car to take commands based on what code is arranged by the user. </li>
+              <li>I think I'll laser cut the code blocks, and use hand tools to make a board where they'll be arranged. I'll have to think of some circuitry magic that will allow multiple blocks of varying lengths to come together and allow the program to recognize which of the blocks are where.</li>
+              <li>I'm not sure where the driving force of the program will be located. In the vehicle? In the code blocks? It might be useful to have 1 main start block that contains the code and that all others will attach to.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Week 6: Initial Sketches
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+            <h1>Week 6 Update: Initial Sketches</h1>
+
+    <p>This week, we had to draw up some initial sketches of potential final projects. I was skeptical of this, but it actually raised some really important questions I hadn't considered. Below are some sketches of possible code blocks that could be included in the project:</p>
+
+    <img class="img-thumbnail half centered" src="../images/week1/codeblocks_sketch.JPG" alt="code blocks">
+    <p>Just drawing these made me think about a few important questions:</p>
+    <ul>
+      <li>Should I put everything in a loop that runs forever (like in arduino code) or should I run the main block of code once and simply allow for the possibility of a forever loop?</li>
+      <li>For numbered values (like turn X degrees, or loop X times) how should I specify those numbers? I could use a potentiometer as a dial for these maybe, or should I try a digital input?</li>
+      <li>Is there a way to include variable names or function names? I don't want to make this too text-based because then little kids might not be able to enjoy it, but it does limit programming power.</li>
+      <li>How will I be able to sense which blocks are connected and in what order?</li>
+      <li>How will I send a signal from the blocks to an output device?</li>
+      <li>In addition to movement, can I also add abilities to change color, play sounds, etc? </li>
+    </ul>
+
+    <p>I plan on possibly using a little car as an output device, because I think that would be the most fun for kids. Especially if I can make it cute. A sketch is included below, along with some questions it made me think about.</p>
+
+    <img class="img-thumbnail half centered" src="../images/week1/car.jpg" alt="code blocks">
+
+    <ul>
+      <li>How do cars turn? Especially if I want it to be in place?</li>
+      <li>How can I do so much wiring in a small place?</li>
+      <li>How do microcontrollers work when not attached to a computer?</li>
+      <li>How do we send signals to the microcontrollers using bluetooth?</li>
+      <li>How do I make this sturdy enough that kids won't easily break it?</li>
+    </ul>
+
+    <p>The sketching brought up a lot of good questions that I'll talk to others about and think about over break!</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Week 10: Starting Output and Attempting the ATTiny
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body">
+            <h1>Week 10 Update: Driving and Attempting the Tiny</h1>
+
+            <p>This week, we were tasked with developing the most crucial parts of our final projects, and I would say I made some progress, but didn't quite get there. I suppose this is why we get assignments like this, to get us to run into problems now instead of the day before it's due.</p>
+        
+            <p><strong>Success 1: LED Strip</strong>: I got an LED strip working which I hope to attach to the top of my output in an earlier week:</p>
+        
+            <iframe width="393" height="699" src="https://www.youtube.com/embed/MWPT-xFNN28" title="led strip final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+            <p><strong>Success 2: Driving</strong>: Last week I got some driving working in the group project, so I should be able to make a similar device to drive around and be the output for my final:</p>
+            
+            <iframe width="1086" height="611" src="https://www.youtube.com/embed/iPSuKIa1_i0" title="car demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+            <p><strong>Failure:</strong> I'll need to be able to link several microcontrollers together in order to read in code from the user. Unfortunately, I wasn't even able to set up the ATTINY microcontroller to do something as simple as blinking. I spent a lot of time debugging why I couldn't upload code to any microcontroller from my computer, but that ended up being a waste of time since it just seems to work at random times after I unplug and plug it in a few times. I tried following <a href="https://www.instructables.com/Program-an-ATtiny44458485-with-Arduino/">this tutorial</a> to get just a simple blinking program set up, and after a lot of debugging I got rid of any error messages, but now the code says it uploads only to not do anything. I have double checked quite a bit but can't tell if it's a problem in my code, my wiring, or just in the hardware. My time in the lab this week didn't line up with office hours, so I'll have to try harder to get in for those in the coming week. Here are a couple of pictures of my wiring: </p>
+        
+            <img class="img-thumbnail" src="../images/week10/arduino.JPG" alt="arduino">
+        
+            <img class="img-thumbnail" src="../images/week10/tiny.JPG" alt="tiny">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Week 11: Attempting to Chain ATTiny's
+            </button>
+          </h5>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+          <div class="card-body">
+            <h1>Week 11 Update: Tiny Chaining</h1>
+
+    <p>Just a quick update this week, as I've put in a lot of work but haven't made too much tangible progress. (Although figuring out what won't work is a form of progress, I guess). With Nathan's help, I finally got Blink working on an ATTiny 412, and we switched to the Xiao because the ESP32-S2 was giving me a lot of problems. Then, after some work, I got the two devices to communicate via I2C, but then after a few hours of searching, realized that method would not allow me to detect the order of devices. So now the plan is to use TX-RX in some fashion, so we'll see where that takes me next!</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
 
-<body>
-
-
-<xmp style="display:none;">
-<br> 
-
-#### Week 1: Introduction 
-
-Here is an image: 
-
-![image of embroidery](./sew.png)
-
-And here is a	[link](../index.html).
-
-</xmp>
-</body>
-
-<script src="../strapdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
-
+  </body>
 </html>
