@@ -11,6 +11,10 @@ p {width: 500px;
   font-size: 14px}
 .margin {margin-bottom: 15px;}
 
+li {width: 500px;
+  font-size: 14px;
+}
+
 .gray {color: gray}
 
 pre {
