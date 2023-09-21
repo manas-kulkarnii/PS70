@@ -4,15 +4,15 @@ body {
     color: white;
     padding-left: 100px;
     padding-top: 100px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
 p {width: 500px;
-  font-size: 14px}
+  font-size: 13px}
 .margin {margin-bottom: 15px;}
 
 li {width: 500px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .gray {color: gray}
