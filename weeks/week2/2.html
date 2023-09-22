@@ -6,6 +6,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+
+<style>
+        /* Add some basic styling for the carousel */
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 500px; /* Adjust the width as needed */
+            height: 400px; /* Adjust the height as needed */
+        }
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
 </head>
 
 <body bgcolor=#000000>
@@ -149,33 +166,51 @@ here are versions 1 and 2 of my joiners.
 now that i was happy with the way my hexagons, pentagons, and joiners were looking, it was finally time to start putting the football together. this took far longer than i expected it would. 
 </p>
 
-<p>
-<img src="2.png" width="500">
-</p>
 
-<p>
-<img src="3.png" width="500">
-</p>
-<p>
-<img src="4.png" width="500">
-</p>
-<p>
-<img src="5.png" width="500">
-</p>
-<p>
-<img src="6.png" width="500">
-</p>
-<p>
-<img src="7.png" width="500">
-</p>
+
+  </div>
+
+
+    <div class="carousel" id="photoCarousel">
+        <img src="2.png" alt="Photo 2">
+        <img src="3.png" alt="Photo 3">
+        <img src="4.png" alt="Photo 4">
+        <img src="5.png" alt="Photo 5">
+        <img src="6.png" alt="Photo 6">
+        <img src="7.png" alt="Photo 7">
+
+
+    </div>
+
+    <script>
+        // JavaScript for the carousel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('#photoCarousel img');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].style.display = 'block';
+        }
+
+        // Initial slide display
+        showSlide(currentSlide);
+
+        // Auto-advance the carousel (you can adjust the interval as needed)
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 3000); // 3000 milliseconds (3 seconds)
+    </script>
 
  <p>
 the football looked far better than i expected! my next step will be to re-print it using a more sturdy material like wood and this time cut a round hole in one of the hexagonal panels to drop a light bulb or a string of fairy lights in it. and then my football lamp will be ready. 
 </p>
 
+<p>
+<img src="rolly.gif" width="500">
+</p>
 
-
-  </div>
 
 </body>
 
