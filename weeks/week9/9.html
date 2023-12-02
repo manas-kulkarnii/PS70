@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>PS70: Intro to Digital Fabrication</title>
+  <title>week 9 of ps70 with manas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
   
   <div>
     <pre>
-/page under construction
+/week 9: radio, wifi, bluetooth (IoT)
     </pre>
   </div>
   
@@ -20,13 +20,48 @@
   
   <div>
     <pre style="color:gray">
-# come back in a couple weeks
+# day of the week led display
     </pre>
     <pre style="color:gray">
 # ---------------------------------
   </pre>
     <p>
-there is nothing to see here yet...
+this week, linden and i tackled the networking assignment by creating an led display to indicate the day of the week. we started by designing a display that had seven distinct slots, each representing a different day. our design included pass-through holes for each slot, which allowed us to run wiring to connect the electronics from underneath. after finalizing the prototype design, we proceeded to 3d print it.
+
+this was a good opportunity for me to learn a bit more about grasshopper. click <a download href='networking_assignment.gh'>here</a> to download the grasshopper file. 
+</p>
+
+<p>
+<img src="networking_rhino.png" width="500" alt="3d model of led display">
+</p>
+
+<p>
+to ensure our display would show the correct day, we used an esp32 board, which is a microcontroller with wi-fi capability. this board was programmed to retrieve the current day from an ntp server. an ntp server is a dedicated computer that uses the network time protocol to provide devices with the precise time and date, ensuring our display would always be accurate.
+
+</p>
+
+<p>
+
+our code is designed to connect to a wi-fi network, synchronize time with an ntp server, and control a set of leds based on the day of the week. it defines a structure to associate gpio pins with days of the week and initializes a wi-fi connection using specified credentials. once connected, it retrieves the current time, disconnects from wi-fi to save power, and sets each pin to an output mode. in its main loop, the code continuously checks the current day and activates the corresponding led for that day, turning on one led each day of the week, while turning off all others. it has error handling for failure to obtain the time, and serial print statements for debugging and monitoring its status.
+</p>
+<p>
+this is the code we used:
+</p>
+
+<p>
+<img src="code1.png" width="500" alt="arduino code">
+</p>
+
+<p>
+<img src="code2.png" width="500" alt="arduino code">
+</p>
+
+<p>
+while the printing was underway, we focused on coding. we started by experimenting on a breadboard, connecting several leds to the esp32 using resistors and tested our code. with the code working correctly, we moved on to constructing the final product. we soldered wires to the leds and carefully placed them into the designed slots of our display. after setting up the circuitry and initiating our code, the display came to life, with the green led shining brightly to indicate that it was thursday.
+
+<p>
+<img src="final.jpeg" width="500" alt="final day of the week led display">
+</p>
 </p>
 
   </div>
