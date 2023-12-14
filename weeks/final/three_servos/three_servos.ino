@@ -1,3 +1,5 @@
+//this is just manual mode
+
 #include <Servo.h>
 Servo servo_pin_5; // initialize servos
 Servo servo_pin_9;

@@ -17,17 +17,117 @@
   </div>
   
 
-  
   <div>
     <pre style="color:gray">
-# assignment
+# capacitive sensor
     </pre>
     <pre style="color:gray">
 # ---------------------------------
   </pre>
-    <p>
-Week 6:  1. Make a capacitive sensor to measure a physical quantity with your microcontroller. Avoid the delay() function; use timers instead.  2. Configure and use another sensor (temperature, microphone, etc.). Include at least one output device (it could just be an LED). Avoid the delay() function and use the C++ class structure.  3. Include schematics of each sensor. 4. Calibrate each sensor by plotting points on a graph. Discuss the relationship between the signals recorded by your microcontroller and the physical quantities that you're measuring (i.e., it is likely not a linear relationship).  5. Prepare CAD files for CNC week. Consider either 2D DXF files for routing sheet material (like plywood or OSB), or 3D STL files to mill out a (2.5D) shape.
+
+<p>
+this week's assignment was to make a capacitive sensor. i created a simple capacitive sensor using copper plates. for my final project, i am creating a machine that folds clothes by itself. one of the ambitious features that i would like to add if possible is the ability to fold different sizes of t-shirts. in order to sense how large a t-shirt is, i wondered if it would be possible to use capacitive sensing to detect the distance from one end of the t-shirt to the other end of the t-shirt. this way, the folding machine could adjust its size to fit the t-shirt. 
 </p>
+
+<p>
+<img src="capacitive_photo.png" width="500">
+</p>
+
+
+<p>
+here is the code i used to sense the distance between the two copper plates. 
+</p>
+
+<p>
+<img src="capacitive_code.png" width="500">
+</p>
+
+<p>
+using the serial plotter, i was able to plot a graph of the distance between the two copper plates. although not perfect, i got the sense that it was a fairly accurate way of measuring distance. however, it only functioned for distances up to approximately 15 cm. here is the graph plotted using the serial plotter. 
+</p>
+
+<p>
+<img src="capacitive_graph.png" width="500">
+</p>
+
+
+  <div>
+    <pre style="color:gray">
+# light sensor
+    </pre>
+    <pre style="color:gray">
+# ---------------------------------
+  </pre>
+<p>
+i decided to experiment with some other sensors. one avenue that i wanted to explore for my final project was the ability to automatically detect whether a t-shirt had been placed on my folding machine or not and then fold the t-shirt automatically. i imagined that one way to do so could be by detecting how much light was being sensed on the other side of the folding machine. so, i experimented with creating a light sensor. this is how i wired the photoresistor. 
+</p>
+
+<p>
+<img src="photoresistor_diagram.png" width="500">
+</p>
+
+<p>
+this is what it looked like when i wired it. 
+</p>
+
+<p>
+<img src="photoresistor_photo.png" width="500">
+</p>
+
+<p>
+here is the code i used. the variable "light" shows how much light is being received by the photoresistor. 
+</p>
+
+<p>
+<img src="photoresistor_code.png" width="500">
+</p>
+
+<p>
+i wondered how accurate the photoresistor was. i turned off all the lights in the room. initially, i tried using the flashlight on my phone to test how sensitive the photoresistor was. but on my iphone, i could only turn my flashlight onto four levels of brightness. so, i was unable to see if the photoresistor could detect small changes in light and whether those changes mapped onto the "light" variable in a linear fashion. i downloaded an app on my phone that let me adjust the brightness of my flashlight more finely and tried again. this is the graph plotted using the serial plotter where i am changing the light from bright to dark and back repeatedly. 
+</p>
+
+<p>
+<img src="photoresistor_graph.png" width="500">
+</p>
+
+
+  <div>
+    <pre style="color:gray">
+# sensing light and controlling light
+    </pre>
+    <pre style="color:gray">
+# ---------------------------------
+  </pre>
+<p>
+i could imagine creating a simple tool that turns on lights when it's dark and turns them off when it's bright. i tried to create a simple non-trivial version of something like this by connecting an led to my light sensor. 
+</p>
+
+<p>
+<img src="led_diagram.png" width="500">
+</p>
+
+<p>
+here is the code i used. here, i am "mapping" the reading of the photoresistor onto a range from 0 to 10 because i realized that different photoresistors end up having vastly different readings. i am unsure why that happens. 
+</p>
+
+<p>
+<img src="led_code.png" width="500">
+</p>
+
+<p>
+here is a video of the led turning on and off depending on whether i am shining a flashlight on it or not. 
+</p>
+
+
+<p>
+<video width="500" controls>
+  <source src="led_video.mov">
+Your browser does not support the video tag.
+</video>
+
+</p>
+
+
 
   </div>
 
